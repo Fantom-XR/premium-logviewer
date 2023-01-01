@@ -1,0 +1,31 @@
+{
+  "name": "Modmail Premium Logviewer",
+  "description": "Premium version of logviewer that includes OAuth2 support.",
+  "repository": "https://github.com/kyb3rr/logviewer-premium",
+  "env": {
+    "MONGO_URI": {
+        "description": "MongoDB connection URI that contains your modmail logs.",
+        "required": true
+        },
+    "GUILD_ID": {
+        "description": "Guild ID of your Modmail inbox server (required to enable OAuth2)",
+        "required": false
+        },
+    "TOKEN": {
+        "description": "Your Modmail bot token (required to enable OAuth2)",
+        "required": false
+        },
+    "OAUTH2_CLIENT_ID": {
+        "description": "Bot Client ID that can be found in Discord dev portal (required to enable OAuth2)",
+        "required": false
+        },
+    "OAUTH2_CLIENT_SECRET": {
+        "description": "Bot Client secret that can be found in Discord dev portal (required to enable OAuth2)",
+        "required": false
+        },
+    "OAUTH2_REDIRECT_URI": {
+        "description": "Add this in the format https://appname.herokuapp.com/callback, replacing appname with the name of your logviewer app.",
+        "required": false
+        }
+    }
+}
